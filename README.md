@@ -4,15 +4,12 @@ A simple and interactive Online Examination System built using Java, HTML, CSS, 
 It allows users to take exams online with a timer, automatic score calculation, and result display.
 
 online-exam/
-│
-├── index/                # Main folder containing the website files
-│   ├── index.html        # Main HTML file (Exam portal UI)
-│   ├── style.css         # Styling for the exam interface
-│   └── script.js         # Handles timer and score calculation
-│
-├── java/                 # Java files for storing questions & results
-│   └── ExamSystem.java
-│
-└── images/               # Folder containing screenshots and assets
+index/               
+── index.html        
+── style.css        
+── script.js        
+─ java/                 
+── ExamSystem.java
+─ images/               
    
-![Uploading WhatsApp Image 2025-10-27 at 20.42.48_622e5e92.jpg…]()
+![WhatsApp Image 2025-10-27 at 20 42 48_c0876e17](https://github.com/user-attachments/assets/e76abbfc-a17e-4d14-aed1-7b32b1357745)
