@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Exam Result</h2>
+    <p id="student"></p>
+    <p id="score"></p>
+    <button onclick="window.location.href='index.html'">Take Again</button>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById('student').innerText = "Student: " + params.get('student');
+    
+    // Updated to show "Score: 7-out-of-10"
+    const scoreText = params.get('score').replace("-out-of-", " out of ");
+    document.getElementById('score').innerText = "Score: " + scoreText;
+  </script>
+</body>
+</html>

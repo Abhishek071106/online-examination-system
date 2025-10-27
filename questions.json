@@ -1,0 +1,12 @@
+[
+  {"id": 1, "question": "What does HTML stand for?", "A": "Hyper Text Markup Language", "B": "Home Tool Markup Language", "C": "Hyperlinks Text Model Language", "correct": "A"},
+  {"id": 2, "question": "What does CSS stand for?", "A": "Creative Style Sheets", "B": "Cascading Style Sheets", "C": "Computer Style Sheets", "correct": "B"},
+  {"id": 3, "question": "What is the primary role of HTML in web development?", "A": "To define the structure and content of a web page.", "B": "To control the visual style and layout.", "C": "To handle user interactions and logic.", "correct": "A"},
+  {"id": 4, "question": "What is the main purpose of CSS?", "A": "To add interactivity to web pages.", "B": "To structure the content of web pages.", "C": "To style the visual presentation of web pages.", "correct": "C"},
+  {"id": 5, "question": "What does API stand for in web development?", "A": "Application Programming Interface", "B": "Advanced Page Integration", "C": "Automated Program Interaction", "correct": "A"},
+  {"id": 6, "question": "What is the 'DOM' in the context of web development?", "A": "A database for storing user data.", "B": "A server-side programming language.", "C": "A programming interface for HTML documents.", "correct": "C"},
+  {"id": 7, "question": "Which CSS property controls the spacing *between* elements?", "A": "padding", "B": "spacing", "C": "margin", "correct": "C"},
+  {"id": 8, "question": "How do you declare a variable in JavaScript (pre-ES6)?", "A": "variable myVar;", "B": "var myVar;", "C": "v myVar;", "correct": "B"},
+  {"id": 9, "question": "Which operator is used for strict equality (value and type) in JavaScript?", "A": "==", "B": "=", "C": "===", "correct": "C"},
+  {"id": 10, "question": "What method is used to send data in a POST request with 'fetch'?", "A": "data", "B": "body", "C": "payload", "correct": "B"}
+]

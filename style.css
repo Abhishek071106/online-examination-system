@@ -1,0 +1,155 @@
+/* --- Global Styles --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+/* --- Container Styling --- */
+.container {
+  max-width: 600px;
+  width: 90%;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* --- Typography --- */
+h1,
+h2 {
+  color: #222;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* --- Form Elements --- */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* --- Button Styling --- */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* --- Question Styling --- */
+.question {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.question:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.question p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* --- Answer Option Styling --- */
+.question label {
+  display: block;
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.question label:hover {
+  background: #f0f4f8;
+  border-color: #007bff;
+}
+
+.question input[type="radio"] {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* --- Timer Styling --- */
+#timer {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #d9534f;
+  background: #fdf2f2;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+  border: 1px solid #f0c0c0;
+}
+
+/* --- Result Page --- */
+#student {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#score {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4CAF50;
+  margin: 20px 0;
+}
+
+/* --- STYLES FOR NEW SECTION --- */
+#previousAttempts {
+  text-align: left;
+  margin-top: -20px; /* Pull it closer to the main container */
+}
+
+#previousAttempts h2 {
+  text-align: center;
+}
+
+#resultsList {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#resultsList li {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border: 1px solid #eee;
+}
+/* --- END OF NEW STYLES --- */

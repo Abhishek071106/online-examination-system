@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Exam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Online Examination</h1>
+    <input type="text" id="studentName" placeholder="Enter your name" required>
+    <button onclick="startExam()">Start Exam</button>
+  </div>
+
+  <div class="container" id="previousAttempts">
+    <h2>Previous Attempts</h2>
+    <ul id="resultsList">
+      <li>Loading...</li>
+    </ul>
+  </div>
+  <script>
+    function startExam() {
+      const name = document.getElementById("studentName").value.trim();
+      if (name) window.location.href = `exam.html?student=${name}`;
+      else alert("Please enter your name");
+    }
+
+    // --- ADDED THIS SCRIPT TO FETCH RESULTS ---
+    window.addEventListener("load", () => {
+      fetch("/api/results")
+        .then(res => res.json())
+        .then(data => {
+          const list = document.getElementById("resultsList");
+          list.innerHTML = ""; // Clear "Loading..."
+          
+          if (Object.keys(data).length === 0) {
+            list.innerHTML = "<li>No previous attempts found.</li>";
+            return;
+          }
+
+          // Populate the list with scores
+          for (const [student, score] of Object.entries(data)) {
+            const li = document.createElement("li");
+            li.textContent = `${student}: Score ${score}`;
+            list.appendChild(li);
+          }
+        })
+        .catch(err => {
+          console.error("Error fetching results:", err);
+          document.getElementById("resultsList").innerHTML = "<li>Could not load results.</li>";
+        });
+    });
+    // --- END OF ADDED SCRIPT ---
+  </script>
+</body>
+</html>
